@@ -19,13 +19,16 @@
   </div>
 </nav>
 
-<body class="mg-auto">
+<body class="mg-auto" allow="display-capture">
   <div class="container-fluid">
     <div class="row">
-      <video class="video" #video></video>
+      <div class="link" #link><a href="{{downloadUrl}}" target="_blank">{{ downloadUrl }}</a></div>
     </div>
     <div class="row">
-      <canvas class="canvas" #canvas></canvas>
+      <video class="video" autoplay #video></video>
+    </div>
+    <div class="row">
+      <canvas id="canvas" #canvas></canvas>
     </div>
   </div>
 </body>
